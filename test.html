@@ -50,7 +50,8 @@
         }
     </style>
     <!-- Custom CSS -->
-    <link rel="preload" as="style" href="test_style.css">
+    <link rel="preload" as="style" href="test_style.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="test_style.css"></noscript>
 </head>
 <body>
     <header>
