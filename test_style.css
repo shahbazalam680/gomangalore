@@ -30,3 +30,8 @@ details {
     border: 1px solid #e0e0e7;
     border-radius: 4px;
 }
+@media (max-width: 600px) {
+    main {
+        padding: 0 0.5em;
+    }
+}
