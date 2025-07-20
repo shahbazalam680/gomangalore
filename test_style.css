@@ -50,6 +50,10 @@ img {
     box-shadow: 0 1px 4px rgba(44,62,80,0.08);
 }
 
+h1 {
+    color: #00000d;
+}
+
 h1, h2, h3 {
     color: #38419d;
 }
