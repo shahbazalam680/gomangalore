@@ -77,7 +77,30 @@
             <p>
                 Mangalore, located on the southwest coast of India, is a flourishing port city renowned for its scenic beaches, rich culture, and delectable cuisine. This city offers a blend of modernity and tradition, and is a gateway to the beautiful state of Karnataka.
             </p>
-            <img src="mangalore.avif" alt="Beach in Mangalore" fetchpriority="high" width="600" height="350">
+            <picture>
+                <!-- AVIF for Mobile (max-width: 600px) -->
+                <source
+                    srcset="mangalore_small.avif"
+                    type="image/avif"
+                    media="(max-width: 600px)">
+               <!-- AVIF for Desktop and Tablets -->
+               <source
+                    srcset="mangalore.avif"
+                    type="image/avif"
+                    media="(min-width: 601px)">
+              <!-- JPG fallback for mobile -->
+              <source
+                    srcset="mangalore_small.jpg"
+                    type="image/jpeg"
+                    media="(max-width: 600px)">
+              <!-- JPG fallback for desktop -->
+              <source
+                    srcset="mangalore.jpg"
+                    type="image/jpeg"
+                    media="(min-width: 601px)">
+              <!-- Fallback <img> for legacy browsers (desktop version shown as default) -->
+              <img src="mangalore.jpg" alt="Beach in Mangalore" fetchpriority="high" width="600" height="350">
+            </picture>
         </section>
 
         <section id="places">
@@ -87,7 +110,30 @@
                 <p>
                     Famous for its clean sands and vibrant beach festivals, Panambur Beach is perfect for sunbathing, camel rides, and water sports.
                 </p>
-                <img src="panambur_beach.avif" alt="Panambur Beach" loading="lazy" width="400" height="225">
+                <picture>
+                     <!-- AVIF for Mobile (max-width: 600px) -->
+                     <source
+                        srcset="panambur_beach_small.avif"
+                        type="image/avif"
+                        media="(max-width: 600px)">
+                     <!-- AVIF for Desktop and Tablets -->
+                     <source
+                        srcset="panambur_beach.avif"
+                        type="image/avif"
+                        media="(min-width: 601px)">
+                    <!-- JPG fallback for mobile -->
+                    <source
+                        srcset="panambur_beach_small.jpg"
+                        type="image/jpeg"
+                        media="(max-width: 600px)">
+                    <!-- JPG fallback for desktop -->
+                    <source
+                        srcset="panambur_beach.jpg"
+                        type="image/jpeg"
+                        media="(min-width: 601px)">
+                    <!-- Fallback <img> for legacy browsers (desktop version shown as default) -->
+                    <img src="panambur_beach" alt="Panambur Beach" loading="lazy" width="400" height="225">
+                </picture>
             </article>
 
             <article>
